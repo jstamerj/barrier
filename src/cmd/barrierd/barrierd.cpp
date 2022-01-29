@@ -38,7 +38,6 @@ int WINAPI
 WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
     DaemonApp app;
-    SetProcessDPIAware();
     return app.run(__argc, __argv);
 }
 
