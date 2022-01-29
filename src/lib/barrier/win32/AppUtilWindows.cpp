@@ -138,7 +138,6 @@ AppUtilWindows::run(int argc, char** argv)
         throw std::runtime_error("Barrier only supports Windows XP SP3 and above.");
     }
 
-
     SetProcessDPIAware();
     // record window instance for tray icon, etc
     ArchMiscWindows::setInstanceWin32(GetModuleHandle(NULL));
