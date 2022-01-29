@@ -138,6 +138,9 @@ AppUtilWindows::run(int argc, char** argv)
         throw std::runtime_error("Barrier only supports Windows XP SP3 and above.");
     }
 
+    // This changes the behavior of future calls to GetSystemMetrics()
+    // so that the size or position in raw pixels is returned instead of a scaled value
+    // (when a windows display has a Scale of > 100% set).
     SetProcessDPIAware();
     // record window instance for tray icon, etc
     ArchMiscWindows::setInstanceWin32(GetModuleHandle(NULL));
