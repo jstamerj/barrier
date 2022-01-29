@@ -1,0 +1,2 @@
+Fix running on a windows monitor with Scale set to more than 100%.
+(https://github.com/debauchee/barrier/issues/94, https://github.com/debauchee/barrier/issues/273, https://github.com/debauchee/barrier/issues/1363, https://github.com/debauchee/barrier/issues/1405, https://github.com/debauchee/barrier/issues/1462)
