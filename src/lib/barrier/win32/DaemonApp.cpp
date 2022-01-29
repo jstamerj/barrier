@@ -84,7 +84,7 @@ DaemonApp::~DaemonApp()
 int
 DaemonApp::run(int argc, char** argv)
 {
-  SetProcessDPIAware();
+    SetProcessDPIAware();
     // win32 instance needed for threading, etc.
     ArchMiscWindows::setInstanceWin32(GetModuleHandle(NULL));
 
